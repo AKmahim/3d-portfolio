@@ -1,0 +1,66 @@
+/* Reset and basic styling */
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    font-family: Arial, sans-serif;
+    background-color: #87ceeb; /* Sky color matching Three.js scene */
+  }
+  /* Top header container */
+#header {
+    position: absolute;
+    top: 10px; /* Distance from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Align center */
+    text-align: center;
+    z-index: 10; /* Ensure it is above other content */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Style for links in the header */
+  #header a {
+    color: #ffdd57; /* Highlight link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Spacing between links */
+    font-weight: bold;
+  }
+  
+  #header a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+
+  #h2 {
+    position: absolute;
+    top: 25px; /* Distance from the top */
+    left: 34%; /* Center horizontally */
+    transform: translateX(-50%); /* Align center */
+    text-align: center;
+    z-index: 10; /* Ensure it is above other content */
+    color: white; /* Text color */
+    border-radius: 10px;
+    font-size: 0.7rem;
+  }
+  
+  /* Loading screen styles */
+  #loading-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fbc3f9; /* Matches your sky color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    z-index: 1000; /* Ensures it's on top */
+  }
+  
+  /* Optional canvas styling */
+  canvas {
+    display: block; /* Removes canvas spacing */
+  }
+  
